@@ -32,9 +32,13 @@ body{
   background-color: blanchedalmond;
   border-radius: 4px;
   
- 
- 
 } 
+.table-container{
+  width: 700px;
+  height:300px;
+  padding-left:350px;
+  padding-top:50px
+}
 
 
 

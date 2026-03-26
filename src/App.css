@@ -33,12 +33,42 @@ body{
   border-radius: 4px;
   box-shadow: 8px 16.0px 16.0px hsla(0, 0%, 0%, 0.2);
 } 
-.table-container{
-  width: 700px;
-  height:300px;
-  padding-left:350px;
-  padding-top:50px
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  
+  }
+th, td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  }
+th {
+  background-color: #f2f2f2;
+  }
+.button-wrapper{
+  display:flex;
+  
+  gap: 5px;
+  padding-top: 20px;
+  padding-left: 900px;
 }
+
+.button {
+   
+  text-align: center;
+   margin-top: 10px;
+  width: 100px;
+  height: 50px;
+ 
+
+  background-color: rgb(23, 117, 180);
+  border-radius: 4px;
+  box-shadow: 8px 16.0px 16.0px hsla(0, 0%, 0%, 0.2);
+}
+
 
 
 

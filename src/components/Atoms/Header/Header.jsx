@@ -1,6 +1,6 @@
 export default function Header(){
     return(
-        <div className="header">
+        <div  >
            <h1>Item Lists</h1>
         </div>
     )

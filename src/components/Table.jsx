@@ -1,37 +1,34 @@
-export default function(){
-    return(<div>
-        <table >
+import { Button } from 'antd'
+import { useState } from 'react'
+
+export default function({entries , handleDelete}){
+
+
+  return(<div>
+   <table >
+          
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-      <th scope="col">Handle</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Delete</th>
+      
+      
+  
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>mdo</td>
-       <td>mdo</td>
+ <tbody>
+   {entries.map((data,index )=>(
+    <tr key={index}>
+      <td>{data.FirstName}</td>
+      <td>{data.LastName}</td>
+      <td>{data.Email}</td>
+    <td onClick={()=>handleDelete(index)}><Button>Delete</Button></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>fat</td>
-       <td>fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>twitter</td>
-      <td>twitter</td>
-    </tr>
+   
+  ))}
+   
   </tbody>
 </table>
     </div>

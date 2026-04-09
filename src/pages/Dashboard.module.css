@@ -1,0 +1,109 @@
+
+
+
+.dashboard {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+.formContainer {
+  width: 360px;
+  padding: 35px 30px;
+  
+ 
+   background-color: #1d4949; 
+  backdrop-filter: blur(15px);
+
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+  color: #f01212;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+.formContainer :global(.ant-input) {
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(34, 27, 27, 0.15);
+  border: none;
+  color: #fff;
+}
+
+.formContainer :global(.ant-input::placeholder) {
+  color: rgba(236, 58, 58, 0.7);
+}
+
+.formContainer :global(.ant-input:focus) {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.formContainer :global(.ant-checkbox-wrapper) {
+  color: #fff;
+}
+
+
+.link {
+  color: #ffd369;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+.button {
+  height: 45px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+
+  
+  background: linear-gradient(135deg, #c74561, #dd522b); 
+  /* background-color: #ff9a9e; */
+  border: none;
+  color: #333;
+
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #fad0c4, #ff9a9e);
+  color: #000;
+}
+
+
+ .formContainer {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}  
